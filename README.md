@@ -73,7 +73,7 @@ Student-Success-Predictor/
 
 ---
 
-## 📊 Deliverables
+## Deliverables
 
 - Predictive ML model (`.pkl` file)
 - Interactive dashboard (Streamlit or Dash)
@@ -82,7 +82,7 @@ Student-Success-Predictor/
 
 ---
 
-## 🛣️ Future Improvements
+## Future Improvements
 
 - Integrate live API data from LMS (e.g., D2L Brightspace)
 - Add advisor-facing intervention recommendations
@@ -91,7 +91,7 @@ Student-Success-Predictor/
 
 ---
 
-## 📜 License
+## License
 
 This project is licensed under the [MIT License](LICENSE).
 
