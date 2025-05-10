@@ -50,3 +50,12 @@ Student-Success-Predictor/
 └── docs/
 └── methodology.md <-- Detailed documentation
 ```
+
+---
+
+## 🚀 How to Run the Project
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/YOURUSERNAME/Student-Success-Predictor.git
+   cd Student-Success-Predictor
