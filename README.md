@@ -71,3 +71,27 @@ Student-Success-Predictor/
    cd dashboard
    streamlit run app.py
 
+---
+
+## 📊 Deliverables
+
+- Predictive ML model (`.pkl` file)
+- Interactive dashboard (Streamlit or Dash)
+- Complete documentation of methodology and ethical considerations
+- Sample (simulated) student data for demonstration
+
+---
+
+## 🛣️ Future Improvements
+
+- Integrate live API data from LMS (e.g., D2L Brightspace)
+- Add advisor-facing intervention recommendations
+- Improve model performance with more features (attendance, quiz scores)
+- Deploy dashboard on cloud platforms (AWS, Azure, or Heroku)
+
+---
+
+## 📜 License
+
+This project is licensed under the [MIT License](LICENSE).
+
