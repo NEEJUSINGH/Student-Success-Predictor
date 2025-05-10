@@ -59,3 +59,15 @@ Student-Success-Predictor/
    ```bash
    git clone https://github.com/YOURUSERNAME/Student-Success-Predictor.git
    cd Student-Success-Predictor
+2. **Create a virtual environment (optional but recommended)**
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+3. **Install dependencies**
+   pip install -r dashboard/requirements.txt
+   ```bash
+4. **Run the dashboard**
+   ```bash
+   cd dashboard
+   streamlit run app.py
+
