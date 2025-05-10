@@ -1,17 +1,17 @@
-# 📚 Student Success Predictor
+# Student Success Predictor
 
 > **Predicting student outcomes using early engagement data**
 
 ---
 
-## 🎯 Project Overview
+## Project Overview
 
 The **Student Success Predictor** is a machine learning-based tool designed to identify students who may be at risk of failing a course.  
 By analyzing early indicators such as login frequency, assignment submissions, gradebook activity, and discussion participation, this project helps instructors and advisors intervene early to support student success.
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - **Python**: pandas, scikit-learn
 - **Streamlit** (or Dash): Interactive dashboard
@@ -20,7 +20,7 @@ By analyzing early indicators such as login frequency, assignment submissions, g
 
 ---
 
-## 🗂️ Project Structure
+## Project Structure
 ```
 Student-Success-Predictor/
 │
@@ -53,7 +53,7 @@ Student-Success-Predictor/
 
 ---
 
-## 🚀 How to Run the Project
+## How to Run the Project
 
 1. **Clone the repository**
    ```bash
@@ -64,9 +64,9 @@ Student-Success-Predictor/
    python3 -m venv venv
    source venv/bin/activate  # On Windows: venv\Scripts\activate
 3. **Install dependencies**
-   pip install -r dashboard/requirements.txt
    ```bash
-4. **Run the dashboard**
+   pip install -r dashboard/requirements.txt
+5. **Run the dashboard**
    ```bash
    cd dashboard
    streamlit run app.py
