@@ -1,6 +1,7 @@
 # Student Success Predictor
 
 > **Predicting student outcomes using early engagement data**
+[![View App](https://img.shields.io/badge/Launch%20App-Streamlit-brightgreen?style=for-the-badge&logo=streamlit)](https://student-success-predictor-0123.streamlit.app/)
 
 ---
 
