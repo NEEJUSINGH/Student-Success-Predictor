@@ -1,98 +1,123 @@
-# Student Success Predictor
+# 🎓 Student Success Predictor
 
 > **Predicting student outcomes using early engagement data**
+
 [![View App](https://img.shields.io/badge/Launch_App_on_Streamlit-brightgreen?style=for-the-badge&logo=streamlit)](https://student-success-predictor-0123.streamlit.app/)
 
 ---
 
-## Project Overview
+## 📘 Project Overview
 
-The **Student Success Predictor** is a machine learning-based tool designed to identify students who may be at risk of failing a course.  
-By analyzing early indicators such as login frequency, assignment submissions, gradebook activity, and discussion participation, this project helps instructors and advisors intervene early to support student success.
+The **Student Success Predictor** is a machine learning-based web application designed to help identify students who may be at risk of underperforming in a course.
+
+By analyzing early engagement indicators such as:
+- 📊 Attendance rate  
+- ⏱️ Study hours per week  
+- 🎯 Prior grades  
+- 🧩 Extracurricular involvement  
+- 🏠 Parental support  
+
+...the model helps instructors and advisors intervene early and support at-risk students.
 
 ---
 
-## Tech Stack
+## 🧠 Tech Stack
 
-- **Python**: pandas, scikit-learn
-- **Streamlit** (or Dash): Interactive dashboard
-- **GitHub**: Version control and CI/CD
-- **(Optional)** Docker for containerization
+- **Python**: pandas, scikit-learn, joblib
+- **Streamlit**: Web dashboard for user interaction
+- **Jupyter Notebook**: For data exploration and model training
+- **Git & GitHub**: Version control and deployment
+- *(Optional)* Docker for containerization and cloud deployment
 
 ---
 
-## Project Structure
-```
+## 📂 Project Structure
+```bash
+
 Student-Success-Predictor/
 │
 ├── README.md <-- Project overview (this file)
-├── LICENSE <-- Open-source license
+├── LICENSE <-- Open-source license (MIT)
 ├── .gitignore <-- Ignore unnecessary files
 │
 ├── data/
-│ ├── raw/ <-- Raw input data (e.g., CSV exports)
+│ ├── raw/ <-- Raw input data (e.g., Kaggle CSV)
 │ └── processed/ <-- Cleaned data ready for modeling
 │
 ├── notebooks/
-│ └── 01_EDA_Modeling.ipynb <-- Exploratory Data Analysis and model building
+│ └── 01_EDA_Modeling.ipynb <-- Data analysis & model training notebook
 │
 ├── src/
-│ ├── data_preprocessing.py <-- Data cleaning and preparation
-│ ├── train_model.py <-- Training and saving ML model
-│ └── predict.py <-- Prediction script
-│
-├── dashboard/
-│ ├── app.py <-- Streamlit or Dash application
-│ └── requirements.txt <-- Python package requirements
+│ ├── data_preprocessing.py <-- Data cleaning and feature prep
+│ ├── train_model.py <-- Model training script
+│ └── predict.py <-- Prediction logic
 │
 ├── models/
-│ └── student_success_model.pkl <-- Saved trained model
+│ └── student_success_model.pkl <-- Trained ML model
+│
+├── dashboard/
+│ ├── app.py <-- Streamlit app code
+│ └── requirements.txt <-- Required Python packages
 │
 └── docs/
-└── methodology.md <-- Detailed documentation
+└── methodology.md <-- Documentation on model + ethics
+
 ```
 
 ---
 
-## How to Run the Project
+## How to Run Locally
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/YOURUSERNAME/Student-Success-Predictor.git
-   cd Student-Success-Predictor
-2. **Create a virtual environment (optional but recommended)**
-   ```bash
-   python3 -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-3. **Install dependencies**
-   ```bash
-   pip install -r dashboard/requirements.txt
-5. **Run the dashboard**
-   ```bash
-   cd dashboard
-   streamlit run app.py
+### 1. Clone the repo
+```bash
+git clone https://github.com/NEEJUSINGH/Student-Success-Predictor.git
+cd Student-Success-Predictor
+```
+### 2. Create a virtual environment (recommended)
+```bash
+python3 -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+### 3. Install dependencies
+```bash
+pip install -r dashboard/requirements.txt
+```
+### 4. Run the Streamlit app
+```bash
+cd dashboard
+streamlit run app.py
+```
+### 📦 Deliverables
 
----
+✅ Trained ML model (student_success_model.pkl)
 
-## Deliverables
+✅ Interactive web dashboard (Streamlit)
 
-- Predictive ML model (`.pkl` file)
-- Interactive dashboard (Streamlit or Dash)
-- Complete documentation of methodology and ethical considerations
-- Sample (simulated) student data for demonstration
+✅ Jupyter Notebook for data exploration & training
 
----
+✅ Sample student dataset (simulated)
 
-## Future Improvements
+✅ Documentation (docs/methodology.md)
 
-- Integrate live API data from LMS (e.g., D2L Brightspace)
-- Add advisor-facing intervention recommendations
-- Improve model performance with more features (attendance, quiz scores)
-- Deploy dashboard on cloud platforms (AWS, Azure, or Heroku)
+### 🔮 Future Improvements
+Integrate real-time LMS API data (e.g., D2L Brightspace)
 
----
+Build role-based dashboard views for instructors or advisors
 
-## License
+Include more features like quiz scores, login frequency
 
-This project is licensed under the [MIT License](LICENSE).
+Add intervention recommendation engine
+
+Fully deploy via Streamlit Cloud, Docker, or Heroku
+
+### 📄 License
+This project is licensed under the MIT License.
+
+### 🌐 Live Demo
+
+👉 [Launch the App](https://student-success-predictor-0123.streamlit.app/)
+
+Test the app by uploading a CSV with the following columns:
+
+Gender, AttendanceRate, StudyHoursPerWeek, PreviousGrade, ExtracurricularActivities, ParentalSupport
 
