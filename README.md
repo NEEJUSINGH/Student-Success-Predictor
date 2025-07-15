@@ -6,22 +6,22 @@
 
 ---
 
-## 📘 Project Overview
+##  Project Overview
 
 The **Student Success Predictor** is a machine learning-based web application designed to help identify students who may be at risk of underperforming in a course.
 
 By analyzing early engagement indicators such as:
-- 📊 Attendance rate  
-- ⏱️ Study hours per week  
-- 🎯 Prior grades  
-- 🧩 Extracurricular involvement  
-- 🏠 Parental support  
+- Attendance rate  
+- Study hours per week  
+- Prior grades  
+- Extracurricular involvement  
+- Parental support  
 
 ...the model helps instructors and advisors intervene early and support at-risk students.
 
 ---
 
-## 🧠 Tech Stack
+## Tech Stack
 
 - **Python**: pandas, scikit-learn, joblib
 - **Streamlit**: Web dashboard for user interaction
@@ -31,7 +31,7 @@ By analyzing early engagement indicators such as:
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 ```bash
 
 Student-Success-Predictor/
@@ -87,19 +87,19 @@ pip install -r dashboard/requirements.txt
 cd dashboard
 streamlit run app.py
 ```
-### 📦 Deliverables
+### Deliverables
 
-✅ Trained ML model (student_success_model.pkl)
+- Trained ML model (student_success_model.pkl)
 
-✅ Interactive web dashboard (Streamlit)
+- Interactive web dashboard (Streamlit)
 
-✅ Jupyter Notebook for data exploration & training
+- Jupyter Notebook for data exploration & training
 
-✅ Sample student dataset (simulated)
+- Sample student dataset (simulated)
 
-✅ Documentation (docs/methodology.md)
+- Documentation (docs/methodology.md)
 
-### 🔮 Future Improvements
+### Future Improvements
 Integrate real-time LMS API data (e.g., D2L Brightspace)
 
 Build role-based dashboard views for instructors or advisors
@@ -110,12 +110,12 @@ Add intervention recommendation engine
 
 Fully deploy via Streamlit Cloud, Docker, or Heroku
 
-### 📄 License
+### License
 This project is licensed under the MIT License.
 
-### 🌐 Live Demo
+### Live Demo
 
-👉 [Launch the App](https://student-success-predictor-0123.streamlit.app/)
+[Launch the App](https://student-success-predictor-0123.streamlit.app/)
 
 Test the app by uploading a CSV with the following columns:
 
