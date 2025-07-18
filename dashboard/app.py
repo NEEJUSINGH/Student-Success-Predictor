@@ -5,7 +5,7 @@ import joblib
 
 st.title("Student Success Predictor")
 st.subheader("Predict which students may need support early.")
-st.markdown("Test the app by uploading a CSV with the following columns:)
+st.markdown("Test the app by uploading a CSV with the following columns:")
 
 st.markdown("Gender, AttendanceRate, StudyHoursPerWeek, PreviousGrade, ExtracurricularActivities, ParentalSupport")
 
