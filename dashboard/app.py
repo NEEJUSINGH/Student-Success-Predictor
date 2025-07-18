@@ -36,8 +36,9 @@ if uploaded_file is not None:
         df["Prediction"] = predictions
         df["Prediction"] = df["Prediction"].map({1: "Not At Risk", 0: "At Risk"})
 
-        st.success("✅ Predictions generated successfully!")
-        st.markdown("### 🔍 Prediction Results")
+        st.write("Prediction Result")
         st.dataframe(df)
     else:
-        st.error("Uploaded file does not contain all required columns.")
+        st.error("Uploaded file does not have the required columns.")
+
+   
