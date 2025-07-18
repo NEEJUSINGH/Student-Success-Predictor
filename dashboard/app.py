@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import joblib
 
+
 st.title("Student Success Predictor")
 st.subheader("Predict which students may need support early.")
 st.markdown("Test the app by uploading a CSV with the following columns:")
