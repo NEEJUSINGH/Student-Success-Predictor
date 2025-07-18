@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import joblib
-
+import random
 
 # Page setup
 st.set_page_config(page_title="Student Success Predictor", layout="centered")
@@ -18,14 +18,24 @@ st.markdown("- Gender  \n- AttendanceRate  \n- StudyHoursPerWeek  \n- PreviousGr
 # ===== Download Dummy CSV =====
 st.markdown("---")
 st.markdown("Need an example file?")
-sample_data = pd.DataFrame({
-    "Gender": ["Male", "Female"],
-    "AttendanceRate": [90, 85],
-    "StudyHoursPerWeek": [20, 15],
-    "PreviousGrade": [80, 75],
-    "ExtracurricularActivities": [2, 1],
-    "ParentalSupport": ["High", "Medium"]
-})
+
+
+# Define columns and options
+num_students = 10
+genders = ['Male', 'Female']
+parental_support = ['Low', 'Medium', 'High']
+
+# Generate dummy data
+data = {
+    'Gender': [random.choice(genders) for _ in range(num_students)],
+    'AttendanceRate': [random.randint(70, 100) for _ in range(num_students)],
+    'StudyHoursPerWeek': [random.randint(5, 30) for _ in range(num_students)],
+    'PreviousGrade': [random.randint(60, 100) for _ in range(num_students)],
+    'ExtracurricularActivities': [random.randint(0, 3) for _ in range(num_students)],
+    'ParentalSupport': [random.choice(parental_support) for _ in range(num_students)],
+}
+sample_data = pd.DataFrame(data)
+   
 csv = sample_data.to_csv(index=False).encode('utf-8')
 st.download_button("Download Example CSV", csv, file_name="example_student_data.csv", mime="text/csv")
 
